@@ -20,13 +20,10 @@ def main(inputs: dict, context):
   df3 = pd.read_pickle(inputs["wind_disaster"])
   df4 = pd.read_pickle(inputs["humidity_disaster"])
 
+  images = []
   # Generate and save the plots for each area
   for name, group in grouped:
-    
-    # TODO 支持所有城市
-    if inputs["city"] != name:
-      continue
-      
+
     disasterTmp = df1[df1['市'] == name]
     
     disasterTmp = disasterTmp[['周', '分类', '月','日期']]
@@ -104,8 +101,9 @@ def main(inputs: dict, context):
     plt.title(f'灾害对{name}水稻单位面积产量的影响分析')
     plt.legend()
     img = draw_to_base64(fig)
+    images.append(img)
 
-    context.output(img, "chart", True)
+  context.output(images, "charts", True)
 
 def draw_to_base64(fig):
     fig.canvas.draw()
@@ -114,4 +112,4 @@ def draw_to_base64(fig):
     img_byte_arr = io.BytesIO()
     image.save(img_byte_arr, format="PNG")
     img_byte_arr.seek(0)
-    return base64.b64encode(img_byte_arr.getvalue()).decode("utf-8")
+    return f'data:image/png;base64,{base64.b64encode(img_byte_arr.read()).decode()}'
