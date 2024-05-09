@@ -1,0 +1,15 @@
+type: task_block
+title: Read Dataframe
+icon: https://static.oomol.com/icons/python.png
+executor:
+  name: python_executor
+  entry: __init__.py
+inputs_def:
+  - handle: csv
+    serialize:
+      serializer: json
+      json_schema:
+        type: string
+        ui:widget: file
+outputs_def:
+  - handle: dataframe

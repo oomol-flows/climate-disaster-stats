@@ -1,0 +1,20 @@
+type: task_block
+title: Save Disaster
+description: Save Disaster to CSV
+icon: https://static.oomol.com/icons/python.png
+executor:
+  name: python_executor
+  entry: __init__.py
+inputs_def:
+  - handle: disaster
+  - handle: dir
+    serialize:
+      serializer: json
+      json_schema:
+        type: string
+        ui:widget: dir
+  - handle: name
+    serialize:
+      serializer: json
+      json_schema:
+        type: string

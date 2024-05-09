@@ -1,0 +1,17 @@
+type: task_block
+title: Weekly Stats
+icon: https://static.oomol.com/icons/python.png
+executor:
+  name: python_executor
+  entry: __init__.py
+inputs_def:
+  - handle: climate_data
+  - handle: year_from
+    cache:
+      initial_value: 2001
+  - handle: year_to
+    cache:
+      initial_value: 2009
+  - handle: indicator
+outputs_def:
+  - handle: stats
