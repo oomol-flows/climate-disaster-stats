@@ -4,28 +4,28 @@ nodes:
     inputs_from:
       - handle: csv
         cache:
-          initial_value: /oomol-storage/climate/temp_result.csv
+          initial_value: /oomol-storage/climate/ClimateData/temp_result.csv
     title: Read Temperature
   - task: ../../blocks/read_dataframe/block.oo.yaml
     node_id: 02106c8c-114b-43d4-b114-837b3d062101
     inputs_from:
       - handle: csv
         cache:
-          initial_value: /oomol-storage/climate/precipitation_result.csv
+          initial_value: /oomol-storage/climate/ClimateData/precipitation_result.csv
     title: Read Precipitation
   - task: ../../blocks/read_dataframe/block.oo.yaml
     node_id: 3fb302c1-31d0-493f-9d4a-1c66280bef46
     inputs_from:
       - handle: csv
         cache:
-          initial_value: /oomol-storage/climate/wind_result.csv
+          initial_value: /oomol-storage/climate/ClimateData/wind_result.csv
     title: Read Wind
   - task: ../../blocks/read_dataframe/block.oo.yaml
     node_id: e8fd600f-b0d1-480f-8523-6bbfb65e717a
     inputs_from:
       - handle: csv
         cache:
-          initial_value: /oomol-storage/climate/humidity_result.csv
+          initial_value: /oomol-storage/climate/ClimateData/humidity_result.csv
     title: Read Humidity
   - task: ../../blocks/read_dataframe/block.oo.yaml
     node_id: a1a63c59-59e7-430c-881b-754ec24e9841
