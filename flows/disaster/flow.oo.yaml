@@ -1,35 +1,35 @@
 nodes:
-  - task: ../../blocks/read_dataframe/block.oo.yaml
+  - task: self::read_dataframe
     node_id: 993f691c-6210-4e86-b7ed-0c1e0d28aa14
     inputs_from:
       - handle: csv
         value: /oomol-storage/climate/ClimateData/temp_result.csv
     title: Read Temperature
-  - task: ../../blocks/read_dataframe/block.oo.yaml
+  - task: self::read_dataframe
     node_id: 02106c8c-114b-43d4-b114-837b3d062101
     inputs_from:
       - handle: csv
         value: /oomol-storage/climate/ClimateData/precipitation_result.csv
     title: Read Precipitation
-  - task: ../../blocks/read_dataframe/block.oo.yaml
+  - task: self::read_dataframe
     node_id: 3fb302c1-31d0-493f-9d4a-1c66280bef46
     inputs_from:
       - handle: csv
         value: /oomol-storage/climate/ClimateData/wind_result.csv
     title: Read Wind
-  - task: ../../blocks/read_dataframe/block.oo.yaml
+  - task: self::read_dataframe
     node_id: e8fd600f-b0d1-480f-8523-6bbfb65e717a
     inputs_from:
       - handle: csv
         value: /oomol-storage/climate/ClimateData/humidity_result.csv
     title: Read Humidity
-  - task: ../../blocks/read_dataframe/block.oo.yaml
+  - task: self::read_dataframe
     node_id: a1a63c59-59e7-430c-881b-754ec24e9841
     inputs_from:
       - handle: csv
         value: /oomol-storage/climate/yieldData/rice.csv
     title: Read Yield Data
-  - task: ../../blocks/weekly_stats/block.oo.yaml
+  - task: self::weekly_stats
     node_id: d31b5d46-bb6a-4357-b6bb-54bc349ff3b4
     inputs_from:
       - handle: year_from
@@ -42,7 +42,7 @@ nodes:
             output_handle: dataframe
       - handle: indicator
         value: 气温
-  - task: ../../blocks/weekly_stats/block.oo.yaml
+  - task: self::weekly_stats
     node_id: 18700525-f2c7-4c20-8f60-3b48401f82a3
     inputs_from:
       - handle: year_from
@@ -55,7 +55,7 @@ nodes:
         from_node:
           - node_id: 02106c8c-114b-43d4-b114-837b3d062101
             output_handle: dataframe
-  - task: ../../blocks/weekly_stats/block.oo.yaml
+  - task: self::weekly_stats
     node_id: 4ad3c728-e019-44d5-8d6b-d41800ee22c9
     inputs_from:
       - handle: year_from
@@ -68,7 +68,7 @@ nodes:
         from_node:
           - node_id: 3fb302c1-31d0-493f-9d4a-1c66280bef46
             output_handle: dataframe
-  - task: ../../blocks/weekly_stats/block.oo.yaml
+  - task: self::weekly_stats
     node_id: ae28cfae-06d4-4435-b3f1-da90f7c34244
     inputs_from:
       - handle: year_from
@@ -81,7 +81,7 @@ nodes:
         from_node:
           - node_id: e8fd600f-b0d1-480f-8523-6bbfb65e717a
             output_handle: dataframe
-  - task: ../../blocks/classify_data/block.oo.yaml
+  - task: self::classify_data
     node_id: 6b081ee2-fce1-4cba-bb92-4ff6ae4305ef
     inputs_from:
       - handle: year_from
@@ -94,16 +94,16 @@ nodes:
         value: 平均湿度
       - handle: levels
         value:
-            - 湿润
-            - 湿润
-            - 干旱
-            - 干旱
+          - 湿润
+          - 湿润
+          - 干旱
+          - 干旱
       - handle: levels
         value:
-            - 湿润
-            - 湿润
-            - 干旱
-            - 干旱
+          - 湿润
+          - 湿润
+          - 干旱
+          - 干旱
       - handle: sigma1
         value: 3
       - handle: sigma2
@@ -116,7 +116,7 @@ nodes:
         from_node:
           - node_id: e8fd600f-b0d1-480f-8523-6bbfb65e717a
             output_handle: dataframe
-  - task: ../../blocks/classify_data/block.oo.yaml
+  - task: self::classify_data
     node_id: d3fba861-f4d7-4b9c-a6f8-0b861625a886
     inputs_from:
       - handle: year_from
@@ -129,16 +129,16 @@ nodes:
         value: 平均风速
       - handle: levels
         value:
-            - 风速大
-            - 风速大
-            - 风速小
-            - 风速小
+          - 风速大
+          - 风速大
+          - 风速小
+          - 风速小
       - handle: levels
         value:
-            - 风速大
-            - 风速大
-            - 风速小
-            - 风速小
+          - 风速大
+          - 风速大
+          - 风速小
+          - 风速小
       - handle: sigma1
         value: 3
       - handle: sigma2
@@ -151,7 +151,7 @@ nodes:
         from_node:
           - node_id: 3fb302c1-31d0-493f-9d4a-1c66280bef46
             output_handle: dataframe
-  - task: ../../blocks/classify_data/block.oo.yaml
+  - task: self::classify_data
     node_id: 8a404134-d28a-4416-9f84-58ae9eb75f1d
     inputs_from:
       - handle: year_from
@@ -172,21 +172,21 @@ nodes:
         value: 降水
       - handle: levels
         value:
-            - 降水多
-            - 降水多
-            - 降水少
-            - 降水少
+          - 降水多
+          - 降水多
+          - 降水少
+          - 降水少
       - handle: levels
         value:
-            - 降水多
-            - 降水多
-            - 降水少
-            - 降水少
+          - 降水多
+          - 降水多
+          - 降水少
+          - 降水少
       - handle: sigma1
         value: 3
       - handle: sigma2
         value: 2
-  - task: ../../blocks/classify_data/block.oo.yaml
+  - task: self::classify_data
     node_id: f1d759e0-3ce3-41a5-b346-b00147aeff80
     inputs_from:
       - handle: year_from
@@ -199,16 +199,16 @@ nodes:
         value: 气温
       - handle: levels
         value:
-            - 高温
-            - 高温
-            - 低温
-            - 低温
+          - 高温
+          - 高温
+          - 低温
+          - 低温
       - handle: levels
         value:
-            - 高温
-            - 高温
-            - 低温
-            - 低温
+          - 高温
+          - 高温
+          - 低温
+          - 低温
       - handle: sigma2
         value: 2
       - handle: sigma1
@@ -221,7 +221,7 @@ nodes:
         from_node:
           - node_id: 993f691c-6210-4e86-b7ed-0c1e0d28aa14
             output_handle: dataframe
-  - task: ../../blocks/save_disaster/block.oo.yaml
+  - task: self::save_disaster
     node_id: 5eeb7156-d522-45a5-a56c-e79c936b5f90
     inputs_from:
       - handle: disaster
@@ -232,7 +232,7 @@ nodes:
         value: /oomol-storage/climate/DisasterData
       - handle: name
         value: wind_disaster
-  - task: ../../blocks/save_disaster/block.oo.yaml
+  - task: self::save_disaster
     node_id: 5deef54c-b9ed-4cf3-ad78-bc5f7b279a20
     inputs_from:
       - handle: disaster
@@ -243,7 +243,7 @@ nodes:
         value: /oomol-storage/climate/DisasterData
       - handle: name
         value: precipitation_disaster
-  - task: ../../blocks/save_disaster/block.oo.yaml
+  - task: self::save_disaster
     node_id: 01c77df3-f634-4c3c-8fd7-f682be4e236c
     inputs_from:
       - handle: disaster
@@ -254,7 +254,7 @@ nodes:
         value: /oomol-storage/climate/DisasterData
       - handle: name
         value: humidity_disaster
-  - task: ../../blocks/save_disaster/block.oo.yaml
+  - task: self::save_disaster
     node_id: fe155a28-4ff3-411b-85d1-d462f00c7c79
     inputs_from:
       - handle: name
@@ -265,7 +265,7 @@ nodes:
         from_node:
           - node_id: f1d759e0-3ce3-41a5-b346-b00147aeff80
             output_handle: disaster
-  - task: ../../blocks/visualize_disaster/block.oo.yaml
+  - task: self::visualize_disaster
     node_id: ce09cc7b-6419-43e5-9ed7-99a185a67479
     inputs_from:
       - handle: precipitation_disaster
