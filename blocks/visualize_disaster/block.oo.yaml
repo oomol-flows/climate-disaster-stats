@@ -2,14 +2,14 @@ type: task_block
 title: Visualize Disaster
 icon: https://static.oomol.com/icons/python.png
 executor:
-  name: python_executor
-  entry: __init__.py
+  name: python
+  options:
+    entry: __init__.py
 inputs_def:
   - handle: yield_data
   - handle: tmp_disaster
   - handle: precipitation_disaster
   - handle: wind_disaster
   - handle: humidity_disaster
-
 outputs_def:
   - handle: charts

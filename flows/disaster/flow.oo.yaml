@@ -3,65 +3,54 @@ nodes:
     node_id: 993f691c-6210-4e86-b7ed-0c1e0d28aa14
     inputs_from:
       - handle: csv
-        cache:
-          initial_value: /oomol-storage/climate/ClimateData/temp_result.csv
+        value: /oomol-storage/climate/ClimateData/temp_result.csv
     title: Read Temperature
   - task: ../../blocks/read_dataframe/block.oo.yaml
     node_id: 02106c8c-114b-43d4-b114-837b3d062101
     inputs_from:
       - handle: csv
-        cache:
-          initial_value: /oomol-storage/climate/ClimateData/precipitation_result.csv
+        value: /oomol-storage/climate/ClimateData/precipitation_result.csv
     title: Read Precipitation
   - task: ../../blocks/read_dataframe/block.oo.yaml
     node_id: 3fb302c1-31d0-493f-9d4a-1c66280bef46
     inputs_from:
       - handle: csv
-        cache:
-          initial_value: /oomol-storage/climate/ClimateData/wind_result.csv
+        value: /oomol-storage/climate/ClimateData/wind_result.csv
     title: Read Wind
   - task: ../../blocks/read_dataframe/block.oo.yaml
     node_id: e8fd600f-b0d1-480f-8523-6bbfb65e717a
     inputs_from:
       - handle: csv
-        cache:
-          initial_value: /oomol-storage/climate/ClimateData/humidity_result.csv
+        value: /oomol-storage/climate/ClimateData/humidity_result.csv
     title: Read Humidity
   - task: ../../blocks/read_dataframe/block.oo.yaml
     node_id: a1a63c59-59e7-430c-881b-754ec24e9841
     inputs_from:
       - handle: csv
-        cache:
-          initial_value: /oomol-storage/climate/yieldData/rice.csv
+        value: /oomol-storage/climate/yieldData/rice.csv
     title: Read Yield Data
   - task: ../../blocks/weekly_stats/block.oo.yaml
     node_id: d31b5d46-bb6a-4357-b6bb-54bc349ff3b4
     inputs_from:
       - handle: year_from
-        cache:
-          initial_value: 2001
+        value: 2001
       - handle: year_to
-        cache:
-          initial_value: 2009
+        value: 2009
       - handle: climate_data
         from_node:
           - node_id: 993f691c-6210-4e86-b7ed-0c1e0d28aa14
             output_handle: dataframe
       - handle: indicator
-        cache:
-          initial_value: 气温
+        value: 气温
   - task: ../../blocks/weekly_stats/block.oo.yaml
     node_id: 18700525-f2c7-4c20-8f60-3b48401f82a3
     inputs_from:
       - handle: year_from
-        cache:
-          initial_value: 2001
+        value: 2001
       - handle: year_to
-        cache:
-          initial_value: 2009
+        value: 2009
       - handle: indicator
-        cache:
-          initial_value: 降水
+        value: 降水
       - handle: climate_data
         from_node:
           - node_id: 02106c8c-114b-43d4-b114-837b3d062101
@@ -70,14 +59,11 @@ nodes:
     node_id: 4ad3c728-e019-44d5-8d6b-d41800ee22c9
     inputs_from:
       - handle: year_from
-        cache:
-          initial_value: 2001
+        value: 2001
       - handle: year_to
-        cache:
-          initial_value: 2009
+        value: 2009
       - handle: indicator
-        cache:
-          initial_value: 平均风速
+        value: 平均风速
       - handle: climate_data
         from_node:
           - node_id: 3fb302c1-31d0-493f-9d4a-1c66280bef46
@@ -86,14 +72,11 @@ nodes:
     node_id: ae28cfae-06d4-4435-b3f1-da90f7c34244
     inputs_from:
       - handle: year_from
-        cache:
-          initial_value: 2001
+        value: 2001
       - handle: year_to
-        cache:
-          initial_value: 2009
+        value: 2009
       - handle: indicator
-        cache:
-          initial_value: 平均湿度
+        value: 平均湿度
       - handle: climate_data
         from_node:
           - node_id: e8fd600f-b0d1-480f-8523-6bbfb65e717a
@@ -102,37 +85,29 @@ nodes:
     node_id: 6b081ee2-fce1-4cba-bb92-4ff6ae4305ef
     inputs_from:
       - handle: year_from
-        cache:
-          initial_value: 2010
+        value: 2010
       - handle: year_to
-        cache:
-          initial_value: 2020
+        value: 2020
       - handle: indicator
-        cache:
-          initial_value: 平均湿度
+        value: 平均湿度
       - handle: indicator
-        cache:
-          initial_value: 平均湿度
+        value: 平均湿度
       - handle: levels
-        cache:
-          initial_value:
+        value:
             - 湿润
             - 湿润
             - 干旱
             - 干旱
       - handle: levels
-        cache:
-          initial_value:
+        value:
             - 湿润
             - 湿润
             - 干旱
             - 干旱
       - handle: sigma1
-        cache:
-          initial_value: 3
+        value: 3
       - handle: sigma2
-        cache:
-          initial_value: 2
+        value: 2
       - handle: weekly_stats
         from_node:
           - node_id: ae28cfae-06d4-4435-b3f1-da90f7c34244
@@ -145,37 +120,29 @@ nodes:
     node_id: d3fba861-f4d7-4b9c-a6f8-0b861625a886
     inputs_from:
       - handle: year_from
-        cache:
-          initial_value: 2010
+        value: 2010
       - handle: year_to
-        cache:
-          initial_value: 2020
+        value: 2020
       - handle: indicator
-        cache:
-          initial_value: 平均风速
+        value: 平均风速
       - handle: indicator
-        cache:
-          initial_value: 平均风速
+        value: 平均风速
       - handle: levels
-        cache:
-          initial_value:
+        value:
             - 风速大
             - 风速大
             - 风速小
             - 风速小
       - handle: levels
-        cache:
-          initial_value:
+        value:
             - 风速大
             - 风速大
             - 风速小
             - 风速小
       - handle: sigma1
-        cache:
-          initial_value: 3
+        value: 3
       - handle: sigma2
-        cache:
-          initial_value: 2
+        value: 2
       - handle: weekly_stats
         from_node:
           - node_id: 4ad3c728-e019-44d5-8d6b-d41800ee22c9
@@ -188,11 +155,9 @@ nodes:
     node_id: 8a404134-d28a-4416-9f84-58ae9eb75f1d
     inputs_from:
       - handle: year_from
-        cache:
-          initial_value: 2010
+        value: 2010
       - handle: year_to
-        cache:
-          initial_value: 2020
+        value: 2020
       - handle: climate_data
         from_node:
           - node_id: 02106c8c-114b-43d4-b114-837b3d062101
@@ -202,66 +167,52 @@ nodes:
           - node_id: 18700525-f2c7-4c20-8f60-3b48401f82a3
             output_handle: stats
       - handle: indicator
-        cache:
-          initial_value: 降水
+        value: 降水
       - handle: indicator
-        cache:
-          initial_value: 降水
+        value: 降水
       - handle: levels
-        cache:
-          initial_value:
+        value:
             - 降水多
             - 降水多
             - 降水少
             - 降水少
       - handle: levels
-        cache:
-          initial_value:
+        value:
             - 降水多
             - 降水多
             - 降水少
             - 降水少
       - handle: sigma1
-        cache:
-          initial_value: 3
+        value: 3
       - handle: sigma2
-        cache:
-          initial_value: 2
+        value: 2
   - task: ../../blocks/classify_data/block.oo.yaml
     node_id: f1d759e0-3ce3-41a5-b346-b00147aeff80
     inputs_from:
       - handle: year_from
-        cache:
-          initial_value: 2010
+        value: 2010
       - handle: year_to
-        cache:
-          initial_value: 2020
+        value: 2020
       - handle: indicator
-        cache:
-          initial_value: 气温
+        value: 气温
       - handle: indicator
-        cache:
-          initial_value: 气温
+        value: 气温
       - handle: levels
-        cache:
-          initial_value:
+        value:
             - 高温
             - 高温
             - 低温
             - 低温
       - handle: levels
-        cache:
-          initial_value:
+        value:
             - 高温
             - 高温
             - 低温
             - 低温
       - handle: sigma2
-        cache:
-          initial_value: 2
+        value: 2
       - handle: sigma1
-        cache:
-          initial_value: 3
+        value: 3
       - handle: weekly_stats
         from_node:
           - node_id: d31b5d46-bb6a-4357-b6bb-54bc349ff3b4
@@ -278,11 +229,9 @@ nodes:
           - node_id: d3fba861-f4d7-4b9c-a6f8-0b861625a886
             output_handle: disaster
       - handle: dir
-        cache:
-          initial_value: /oomol-storage/climate/DisasterData
+        value: /oomol-storage/climate/DisasterData
       - handle: name
-        cache:
-          initial_value: wind_disaster
+        value: wind_disaster
   - task: ../../blocks/save_disaster/block.oo.yaml
     node_id: 5deef54c-b9ed-4cf3-ad78-bc5f7b279a20
     inputs_from:
@@ -291,11 +240,9 @@ nodes:
           - node_id: 8a404134-d28a-4416-9f84-58ae9eb75f1d
             output_handle: disaster
       - handle: dir
-        cache:
-          initial_value: /oomol-storage/climate/DisasterData
+        value: /oomol-storage/climate/DisasterData
       - handle: name
-        cache:
-          initial_value: precipitation_disaster
+        value: precipitation_disaster
   - task: ../../blocks/save_disaster/block.oo.yaml
     node_id: 01c77df3-f634-4c3c-8fd7-f682be4e236c
     inputs_from:
@@ -304,20 +251,16 @@ nodes:
           - node_id: 6b081ee2-fce1-4cba-bb92-4ff6ae4305ef
             output_handle: disaster
       - handle: dir
-        cache:
-          initial_value: /oomol-storage/climate/DisasterData
+        value: /oomol-storage/climate/DisasterData
       - handle: name
-        cache:
-          initial_value: humidity_disaster
+        value: humidity_disaster
   - task: ../../blocks/save_disaster/block.oo.yaml
     node_id: fe155a28-4ff3-411b-85d1-d462f00c7c79
     inputs_from:
       - handle: name
-        cache:
-          initial_value: tmp_disaster
+        value: tmp_disaster
       - handle: dir
-        cache:
-          initial_value: /oomol-storage/climate/DisasterData
+        value: /oomol-storage/climate/DisasterData
       - handle: disaster
         from_node:
           - node_id: f1d759e0-3ce3-41a5-b346-b00147aeff80
@@ -350,11 +293,9 @@ nodes:
           - node_id: f1d759e0-3ce3-41a5-b346-b00147aeff80
             output_handle: disaster
       - handle: city
-        cache:
-          initial_value: 朝阳市
+        value: 朝阳市
       - handle: images_dir
-        cache:
-          initial_value: /oomol-storage/1231231
+        value: /oomol-storage/1231231
   - task: preview::image_gallery
     node_id: 34538b5b-e5f7-4bfd-8a3d-5700a50adec0
     inputs_from:

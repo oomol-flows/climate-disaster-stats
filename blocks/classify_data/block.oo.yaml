@@ -2,50 +2,35 @@ type: task_block
 title: Classify Data
 icon: https://static.oomol.com/icons/python.png
 executor:
-  name: python_executor
-  entry: __init__.py
+  name: python
+  options:
+    entry: __init__.py
 inputs_def:
   - handle: climate_data
   - handle: weekly_stats
   - handle: sigma1
-    serialize:
-      serializer: json
-      json_schema:
-        type: integer
-    cache:
-      initial_value: 3
+    json_schema:
+      type: integer
+    value: 3
   - handle: sigma2
-    serialize:
-      serializer: json
-      json_schema:
-        type: integer
-    cache:
-      initial_value: 2
+    json_schema:
+      type: integer
+    value: 2
   - handle: year_from
-    serialize:
-      serializer: json
-      json_schema:
-        type: integer
-    cache:
-      initial_value: 2010
+    json_schema:
+      type: integer
+    value: 2010
   - handle: year_to
-    serialize:
-      serializer: json
-      json_schema:
-        type: integer
-    cache:
-      initial_value: 2020
+    json_schema:
+      type: integer
+    value: 2020
   - handle: indicator
-    serialize:
-      serializer: json
-      json_schema:
-        type: string
+    json_schema:
+      type: string
   - handle: levels
-    serialize:
-      serializer: json
-      json_schema:
-        type: array
-        items:
-          type: string
+    json_schema:
+      type: array
+      items:
+        type: string
 outputs_def:
   - handle: disaster

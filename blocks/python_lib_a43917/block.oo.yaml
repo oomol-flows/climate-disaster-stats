@@ -2,68 +2,54 @@ type: task_block
 title: process
 icon: https://static.oomol.com/icons/python.png
 executor:
-  name: python_executor
-  entry: __init__.py
+  name: python
+  options:
+    entry: __init__.py
 inputs_def:
   - handle: yield_data
-    serialize:
-      serializer: json
-      json_schema:
-        type: string
-        ui:widget: file
+    json_schema:
+      type: string
+      ui:widget: file
   - handle: climate_data_dir
-    serialize:
-      serializer: json
-      json_schema:
-        type: string
-        ui:widget: dir
+    json_schema:
+      type: string
+      ui:widget: dir
   - handle: indicators
-    serialize:
-      serializer: json
-      json_schema:
-        type: array
-        ui:widget: multiSelect
-        ui:options:
-          metaOptions:
-            - label: temp
-              value: temp
-            - label: precipitation
-              value: precipitation
-            - label: wind
-              value: wind
-            - label: humidity
-              value: humidity
-    cache:
-      initial_value:
+    json_schema:
+      type: array
+      ui:widget: multiSelect
+      ui:options:
+        metaOptions:
+          - label: temp
+            value: temp
+          - label: precipitation
+            value: precipitation
+          - label: wind
+            value: wind
+          - label: humidity
+            value: humidity
+    value:
         - temp
         - precipitation
         - wind
         - humidity
   - handle: sigma1
-    serialize:
-      serializer: json
-      json_schema:
-        type: number
-        minimum: 0
-        maximum: 4
-        ui:options:
-          step: 1
-    cache:
-      initial_value: 3
+    json_schema:
+      type: number
+      minimum: 0
+      maximum: 4
+      ui:options:
+        step: 1
+    value: 3
   - handle: sigma2
-    serialize:
-      serializer: json
-      json_schema:
-        type: number
-        minimum: 0
-        maximum: 4
-        ui:options:
-          step: 1
-    cache:
-      initial_value: 2
+    json_schema:
+      type: number
+      minimum: 0
+      maximum: 4
+      ui:options:
+        step: 1
+    value: 2
 outputs_def:
   - handle: chart
-    serialize:
-      serializer: json
-      json_schema:
-        type: string
+    json_schema:
+      type: string
