@@ -1,6 +1,7 @@
 type: task_block
 title: process
 icon: https://static.oomol.com/icons/python.png
+
 executor:
   name: python
   options:

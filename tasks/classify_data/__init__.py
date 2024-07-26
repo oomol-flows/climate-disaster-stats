@@ -4,11 +4,10 @@ import tempfile
 import numpy as np
 
 def main(inputs: dict, context):
-  # TODO 支持直传 dataframe
-  climate_data = pd.read_pickle(inputs["climate_data"])
-  
-  # TODO 支持直传 dataframe
-  weekly_stats = pd.read_pickle(inputs["weekly_stats"])
+
+  climate_data = inputs["climate_data"]
+
+  weekly_stats = inputs["weekly_stats"]
   
   # 调整1-4月，10-12月正态分布评估标准的标准差范围，数值越小，灾害越多
   sigma1 = inputs["sigma1"]
@@ -41,10 +40,8 @@ def main(inputs: dict, context):
   data['月'] = data['日期'].dt.month
   data['年'] = data['日期'].dt.year
   data['周'] = data.groupby(['月'])['周'].transform(lambda x: pd.factorize(x)[0] + 1)
-  
-  # TODO 支持直传 dataframe
-  pkl = os.path.join(tempfile.gettempdir(), "classify_data_{}.pkl".format(hash(inputs["climate_data"] + inputs["weekly_stats"])))
-  data.to_pickle(pkl)
-  
-  # TODO 支持直传 dataframe
-  context.output(pkl, "disaster", True)
+
+  return {
+    "disaster": data
+  }
+

@@ -7,6 +7,8 @@ executor:
     entry: __init__.py
 inputs_def:
   - handle: climate_data
+    json_schema:
+      contentMediaType: oomol/var
   - handle: year_from
     value: 2001
   - handle: year_to
@@ -14,3 +16,5 @@ inputs_def:
   - handle: indicator
 outputs_def:
   - handle: stats
+    json_schema:
+      contentMediaType: oomol/var

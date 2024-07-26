@@ -14,7 +14,7 @@
         "y": -507
       },
       "width": 214,
-      "height": 171
+      "height": 176
     },
     {
       "id": "993f691c-6210-4e86-b7ed-0c1e0d28aa14",
@@ -30,7 +30,7 @@
         "y": -598
       },
       "width": 214,
-      "height": 171
+      "height": 92
     },
     {
       "id": "02106c8c-114b-43d4-b114-837b3d062101",
@@ -46,7 +46,7 @@
         "y": -260
       },
       "width": 214,
-      "height": 171
+      "height": 92
     },
     {
       "id": "3fb302c1-31d0-493f-9d4a-1c66280bef46",
@@ -62,7 +62,7 @@
         "y": 13
       },
       "width": 214,
-      "height": 171
+      "height": 92
     },
     {
       "id": "e8fd600f-b0d1-480f-8523-6bbfb65e717a",
@@ -78,7 +78,7 @@
         "y": 403
       },
       "width": 214,
-      "height": 171
+      "height": 92
     },
     {
       "id": "18700525-f2c7-4c20-8f60-3b48401f82a3",
@@ -94,7 +94,7 @@
         "y": -169
       },
       "width": 214,
-      "height": 171
+      "height": 176
     },
     {
       "id": "4ad3c728-e019-44d5-8d6b-d41800ee22c9",
@@ -110,7 +110,7 @@
         "y": 91
       },
       "width": 214,
-      "height": 171
+      "height": 176
     },
     {
       "id": "ae28cfae-06d4-4435-b3f1-da90f7c34244",
@@ -126,7 +126,7 @@
         "y": 481
       },
       "width": 214,
-      "height": 171
+      "height": 176
     },
     {
       "id": "6b081ee2-fce1-4cba-bb92-4ff6ae4305ef",
@@ -142,7 +142,7 @@
         "y": 364
       },
       "width": 214,
-      "height": 171
+      "height": 288
     },
     {
       "id": "d3fba861-f4d7-4b9c-a6f8-0b861625a886",
@@ -158,7 +158,7 @@
         "y": -13
       },
       "width": 214,
-      "height": 171
+      "height": 288
     },
     {
       "id": "8a404134-d28a-4416-9f84-58ae9eb75f1d",
@@ -174,7 +174,7 @@
         "y": -377
       },
       "width": 214,
-      "height": 171
+      "height": 288
     },
     {
       "id": "f1d759e0-3ce3-41a5-b346-b00147aeff80",
@@ -190,7 +190,7 @@
         "y": -702
       },
       "width": 214,
-      "height": 171
+      "height": 288
     },
     {
       "id": "5eeb7156-d522-45a5-a56c-e79c936b5f90",
@@ -206,7 +206,7 @@
         "y": 91
       },
       "width": 214,
-      "height": 171
+      "height": 127
     },
     {
       "id": "5deef54c-b9ed-4cf3-ad78-bc5f7b279a20",
@@ -222,7 +222,7 @@
         "y": -221
       },
       "width": 214,
-      "height": 171
+      "height": 127
     },
     {
       "id": "01c77df3-f634-4c3c-8fd7-f682be4e236c",
@@ -238,7 +238,7 @@
         "y": 494
       },
       "width": 214,
-      "height": 171
+      "height": 127
     },
     {
       "id": "fe155a28-4ff3-411b-85d1-d462f00c7c79",
@@ -254,7 +254,7 @@
         "y": -832
       },
       "width": 214,
-      "height": 171
+      "height": 127
     },
     {
       "id": "a1a63c59-59e7-430c-881b-754ec24e9841",
@@ -270,7 +270,7 @@
         "y": -546
       },
       "width": 214,
-      "height": 171
+      "height": 92
     },
     {
       "id": "ce09cc7b-6419-43e5-9ed7-99a185a67479",
@@ -286,24 +286,443 @@
         "y": 0
       },
       "width": 218,
-      "height": 171
+      "height": 204
     },
     {
-      "id": "34538b5b-e5f7-4bfd-8a3d-5700a50adec0",
-      "contentWidth": 484.26953125,
-      "selected": false,
+      "id": "images_preview#1",
+      "contentWidth": 200,
+      "selected": true,
       "dragging": false,
       "position": {
-        "x": 2002,
-        "y": 52
+        "x": 1989,
+        "y": -91
       },
       "positionAbsolute": {
-        "x": 2002,
-        "y": 52
+        "x": 1989,
+        "y": -91
       },
-      "width": 498,
+      "width": 214,
       "height": 271
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "id": "21861284-1f64-4c69-bf9d-bd94a35a2e9d",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "993f691c-6210-4e86-b7ed-0c1e0d28aa14",
+            "output_handle": "dataframe"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "d31b5d46-bb6a-4357-b6bb-54bc349ff3b4",
+            "input_handle": "climate_data"
+          }
+        }
+      }
+    },
+    {
+      "id": "8612841f-64ec-497f-9dbd-94a35a2e9d6e",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "02106c8c-114b-43d4-b114-837b3d062101",
+            "output_handle": "dataframe"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "18700525-f2c7-4c20-8f60-3b48401f82a3",
+            "input_handle": "climate_data"
+          }
+        }
+      }
+    },
+    {
+      "id": "12841f64-ec69-4f9d-bd94-a35a2e9d6e10",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "3fb302c1-31d0-493f-9d4a-1c66280bef46",
+            "output_handle": "dataframe"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "4ad3c728-e019-44d5-8d6b-d41800ee22c9",
+            "input_handle": "climate_data"
+          }
+        }
+      }
+    },
+    {
+      "id": "841f64ec-697f-4dbd-94a3-5a2e9d6e10b9",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "e8fd600f-b0d1-480f-8523-6bbfb65e717a",
+            "output_handle": "dataframe"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "ae28cfae-06d4-4435-b3f1-da90f7c34244",
+            "input_handle": "climate_data"
+          }
+        }
+      }
+    },
+    {
+      "id": "1f64ec69-7f9d-4d94-a35a-2e9d6e10b9ed",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "ae28cfae-06d4-4435-b3f1-da90f7c34244",
+            "output_handle": "stats"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "6b081ee2-fce1-4cba-bb92-4ff6ae4305ef",
+            "input_handle": "weekly_stats"
+          }
+        }
+      }
+    },
+    {
+      "id": "64ec697f-9dbd-44a3-9a2e-9d6e10b9edec",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "e8fd600f-b0d1-480f-8523-6bbfb65e717a",
+            "output_handle": "dataframe"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "6b081ee2-fce1-4cba-bb92-4ff6ae4305ef",
+            "input_handle": "climate_data"
+          }
+        }
+      }
+    },
+    {
+      "id": "ec697f9d-bd94-435a-ae9d-6e10b9edecee",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "4ad3c728-e019-44d5-8d6b-d41800ee22c9",
+            "output_handle": "stats"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "d3fba861-f4d7-4b9c-a6f8-0b861625a886",
+            "input_handle": "weekly_stats"
+          }
+        }
+      }
+    },
+    {
+      "id": "697f9dbd-94a3-4a2e-9d6e-10b9edecee5e",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "3fb302c1-31d0-493f-9d4a-1c66280bef46",
+            "output_handle": "dataframe"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "d3fba861-f4d7-4b9c-a6f8-0b861625a886",
+            "input_handle": "climate_data"
+          }
+        }
+      }
+    },
+    {
+      "id": "7f9dbd94-a35a-4e9d-ae10-b9edecee5eb0",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "02106c8c-114b-43d4-b114-837b3d062101",
+            "output_handle": "dataframe"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "8a404134-d28a-4416-9f84-58ae9eb75f1d",
+            "input_handle": "climate_data"
+          }
+        }
+      }
+    },
+    {
+      "id": "9dbd94a3-5a2e-4d6e-90b9-edecee5eb0a0",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "18700525-f2c7-4c20-8f60-3b48401f82a3",
+            "output_handle": "stats"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "8a404134-d28a-4416-9f84-58ae9eb75f1d",
+            "input_handle": "weekly_stats"
+          }
+        }
+      }
+    },
+    {
+      "id": "bd94a35a-2e9d-4e10-b9ed-ecee5eb0a0f5",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "d31b5d46-bb6a-4357-b6bb-54bc349ff3b4",
+            "output_handle": "stats"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "f1d759e0-3ce3-41a5-b346-b00147aeff80",
+            "input_handle": "weekly_stats"
+          }
+        }
+      }
+    },
+    {
+      "id": "94a35a2e-9d6e-40b9-adec-ee5eb0a0f5a7",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "993f691c-6210-4e86-b7ed-0c1e0d28aa14",
+            "output_handle": "dataframe"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "f1d759e0-3ce3-41a5-b346-b00147aeff80",
+            "input_handle": "climate_data"
+          }
+        }
+      }
+    },
+    {
+      "id": "a35a2e9d-6e10-49ed-acee-5eb0a0f5a761",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "d3fba861-f4d7-4b9c-a6f8-0b861625a886",
+            "output_handle": "disaster"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "5eeb7156-d522-45a5-a56c-e79c936b5f90",
+            "input_handle": "disaster"
+          }
+        }
+      }
+    },
+    {
+      "id": "5a2e9d6e-10b9-4dec-ae5e-b0a0f5a7613e",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "8a404134-d28a-4416-9f84-58ae9eb75f1d",
+            "output_handle": "disaster"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "5deef54c-b9ed-4cf3-ad78-bc5f7b279a20",
+            "input_handle": "disaster"
+          }
+        }
+      }
+    },
+    {
+      "id": "2e9d6e10-b9ed-4cee-9eb0-a0f5a7613e0b",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "6b081ee2-fce1-4cba-bb92-4ff6ae4305ef",
+            "output_handle": "disaster"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "01c77df3-f634-4c3c-8fd7-f682be4e236c",
+            "input_handle": "disaster"
+          }
+        }
+      }
+    },
+    {
+      "id": "9d6e10b9-edec-4e5e-b0a0-f5a7613e0bb0",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "f1d759e0-3ce3-41a5-b346-b00147aeff80",
+            "output_handle": "disaster"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "fe155a28-4ff3-411b-85d1-d462f00c7c79",
+            "input_handle": "disaster"
+          }
+        }
+      }
+    },
+    {
+      "id": "6e10b9ed-ecee-4eb0-a0f5-a7613e0bb0a1",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "8a404134-d28a-4416-9f84-58ae9eb75f1d",
+            "output_handle": "disaster"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "ce09cc7b-6419-43e5-9ed7-99a185a67479",
+            "input_handle": "precipitation_disaster"
+          }
+        }
+      }
+    },
+    {
+      "id": "10b9edec-ee5e-40a0-b5a7-613e0bb0a1f9",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "d3fba861-f4d7-4b9c-a6f8-0b861625a886",
+            "output_handle": "disaster"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "ce09cc7b-6419-43e5-9ed7-99a185a67479",
+            "input_handle": "wind_disaster"
+          }
+        }
+      }
+    },
+    {
+      "id": "b9edecee-5eb0-40f5-a761-3e0bb0a1f9d2",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "6b081ee2-fce1-4cba-bb92-4ff6ae4305ef",
+            "output_handle": "disaster"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "ce09cc7b-6419-43e5-9ed7-99a185a67479",
+            "input_handle": "humidity_disaster"
+          }
+        }
+      }
+    },
+    {
+      "id": "edecee5e-b0a0-45a7-a13e-0bb0a1f9d242",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "a1a63c59-59e7-430c-881b-754ec24e9841",
+            "output_handle": "dataframe"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "ce09cc7b-6419-43e5-9ed7-99a185a67479",
+            "input_handle": "yield_data"
+          }
+        }
+      }
+    },
+    {
+      "id": "ecee5eb0-a0f5-4761-be0b-b0a1f9d242e1",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "f1d759e0-3ce3-41a5-b346-b00147aeff80",
+            "output_handle": "disaster"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "ce09cc7b-6419-43e5-9ed7-99a185a67479",
+            "input_handle": "tmp_disaster"
+          }
+        }
+      }
+    },
+    {
+      "id": "0d8c8fcc-4889-437f-99f2-cab624d0ad42",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "ce09cc7b-6419-43e5-9ed7-99a185a67479",
+            "output_handle": "charts"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "images_preview#1",
+            "input_handle": "images"
+          }
+        }
+      }
+    }
+  ]
 }

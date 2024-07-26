@@ -7,7 +7,11 @@ executor:
     entry: __init__.py
 inputs_def:
   - handle: climate_data
+    json_schema:
+      contentMediaType: oomol/var
   - handle: weekly_stats
+    json_schema:
+      contentMediaType: oomol/var
   - handle: sigma1
     json_schema:
       type: integer
@@ -34,3 +38,5 @@ inputs_def:
         type: string
 outputs_def:
   - handle: disaster
+    json_schema:
+      contentMediaType: oomol/var

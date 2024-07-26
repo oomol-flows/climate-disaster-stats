@@ -9,16 +9,15 @@ plt.rcParams["font.family"] = "sans-serif"
 plt.rcParams["font.sans-serif"] = ["Source Han Sans SC"]
 
 def main(inputs: dict, context):
-  # TODO 支持直传 dataframe
-  yieldData = pd.read_pickle(inputs["yield_data"])
+
+  yieldData = inputs["yield_data"]
   
   grouped = yieldData.groupby('name')
   
-  # TODO 支持直传 dataframe
-  df1 = pd.read_pickle(inputs["tmp_disaster"])
-  df2 = pd.read_pickle(inputs["precipitation_disaster"])
-  df3 = pd.read_pickle(inputs["wind_disaster"])
-  df4 = pd.read_pickle(inputs["humidity_disaster"])
+  df1 = inputs["tmp_disaster"]
+  df2 = inputs["precipitation_disaster"]
+  df3 = inputs["wind_disaster"]
+  df4 = inputs["humidity_disaster"]
 
   images = []
   # Generate and save the plots for each area
@@ -103,7 +102,10 @@ def main(inputs: dict, context):
     img = draw_to_base64(fig)
     images.append(img)
 
-  context.output(images, "charts", True)
+  
+  return {
+    "charts": images
+  }
 
 def draw_to_base64(fig):
     fig.canvas.draw()

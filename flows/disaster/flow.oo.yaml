@@ -296,8 +296,9 @@ nodes:
         value: 朝阳市
       - handle: images_dir
         value: /oomol-storage/1231231
-  - task: preview::image_gallery
-    node_id: 34538b5b-e5f7-4bfd-8a3d-5700a50adec0
+  - task: preview::images_preview
+    title: "Images Preview #1"
+    node_id: images_preview#1
     inputs_from:
       - handle: images
         from_node:

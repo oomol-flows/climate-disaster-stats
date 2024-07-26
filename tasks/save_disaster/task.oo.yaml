@@ -8,6 +8,8 @@ executor:
     entry: __init__.py
 inputs_def:
   - handle: disaster
+    json_schema:
+      contentMediaType: oomol/var
   - handle: dir
     json_schema:
       type: string

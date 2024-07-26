@@ -7,9 +7,19 @@ executor:
     entry: __init__.py
 inputs_def:
   - handle: yield_data
+    json_schema:
+      contentMediaType: oomol/var
   - handle: tmp_disaster
+    json_schema:
+      contentMediaType: oomol/var
   - handle: precipitation_disaster
+    json_schema:
+      contentMediaType: oomol/var
   - handle: wind_disaster
+    json_schema:
+      contentMediaType: oomol/var
   - handle: humidity_disaster
+    json_schema:
+      contentMediaType: oomol/var
 outputs_def:
   - handle: charts

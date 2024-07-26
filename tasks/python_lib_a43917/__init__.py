@@ -224,4 +224,6 @@ def main(inputs: dict, context):
   
   yieldData=pd.read_csv(inputs["yield_data"])
   pic = draw_pic(yieldData, disasterList)
-  context.output(pic, "chart", True)
+  return {
+      "chart": pic
+  }

@@ -12,3 +12,5 @@ inputs_def:
       ui:widget: file
 outputs_def:
   - handle: dataframe
+    json_schema:
+      contentMediaType: oomol/var
