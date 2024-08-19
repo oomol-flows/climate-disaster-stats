@@ -4,30 +4,45 @@ nodes:
     inputs_from:
       - handle: csv
         value: /oomol-storage/climate/ClimateData/temp_result.csv
+        from_node:
+          - node_id: download_to_local#3
+            output_handle: file_address
     title: Read Temperature
   - task: self::read_dataframe
     node_id: 02106c8c-114b-43d4-b114-837b3d062101
     inputs_from:
       - handle: csv
         value: /oomol-storage/climate/ClimateData/precipitation_result.csv
+        from_node:
+          - node_id: download_to_local#1
+            output_handle: file_address
     title: Read Precipitation
   - task: self::read_dataframe
     node_id: 3fb302c1-31d0-493f-9d4a-1c66280bef46
     inputs_from:
       - handle: csv
         value: /oomol-storage/climate/ClimateData/wind_result.csv
+        from_node:
+          - node_id: download_to_local#2
+            output_handle: file_address
     title: Read Wind
   - task: self::read_dataframe
     node_id: e8fd600f-b0d1-480f-8523-6bbfb65e717a
     inputs_from:
       - handle: csv
         value: /oomol-storage/climate/ClimateData/humidity_result.csv
+        from_node:
+          - node_id: download_to_local#4
+            output_handle: file_address
     title: Read Humidity
   - task: self::read_dataframe
     node_id: a1a63c59-59e7-430c-881b-754ec24e9841
     inputs_from:
       - handle: csv
         value: /oomol-storage/climate/yieldData/rice.csv
+        from_node:
+          - node_id: download_to_local#5
+            output_handle: file_address
     title: Read Yield Data
   - task: self::weekly_stats
     node_id: d31b5d46-bb6a-4357-b6bb-54bc349ff3b4
@@ -229,7 +244,7 @@ nodes:
           - node_id: d3fba861-f4d7-4b9c-a6f8-0b861625a886
             output_handle: disaster
       - handle: dir
-        value: /oomol-storage/climate/DisasterData
+        value: /oomol-storage
       - handle: name
         value: wind_disaster
   - task: self::save_disaster
@@ -240,7 +255,7 @@ nodes:
           - node_id: 8a404134-d28a-4416-9f84-58ae9eb75f1d
             output_handle: disaster
       - handle: dir
-        value: /oomol-storage/climate/DisasterData
+        value: /oomol-storage
       - handle: name
         value: precipitation_disaster
   - task: self::save_disaster
@@ -251,7 +266,7 @@ nodes:
           - node_id: 6b081ee2-fce1-4cba-bb92-4ff6ae4305ef
             output_handle: disaster
       - handle: dir
-        value: /oomol-storage/climate/DisasterData
+        value: /oomol-storage
       - handle: name
         value: humidity_disaster
   - task: self::save_disaster
@@ -260,7 +275,7 @@ nodes:
       - handle: name
         value: tmp_disaster
       - handle: dir
-        value: /oomol-storage/climate/DisasterData
+        value: /oomol-storage
       - handle: disaster
         from_node:
           - node_id: f1d759e0-3ce3-41a5-b346-b00147aeff80
@@ -304,3 +319,111 @@ nodes:
         from_node:
           - node_id: ce09cc7b-6419-43e5-9ed7-99a185a67479
             output_handle: charts
+  - task: self::download_to_local
+    node_id: download_to_local#1
+    inputs_from:
+      - handle: in
+        value: ""
+      - handle: online_url
+        value: https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/precipitation_result.csv
+      - handle: file_name
+        value: precipitation_result.csv
+      - handle: folder
+        value: /oomol-storage
+  - task: self::download_to_local
+    node_id: download_to_local#2
+    inputs_from:
+      - handle: online_url
+        value: https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/wind_result.csv
+      - handle: file_name
+        value: wind_result.csv
+      - handle: folder
+        value: /oomol-storage
+  - task: self::download_to_local
+    node_id: download_to_local#3
+    inputs_from:
+      - handle: online_url
+        value: https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/temp_result.csv
+      - handle: file_name
+        value: temp_result.csv
+      - handle: folder
+        value: /oomol-storage
+  - task: self::download_to_local
+    node_id: download_to_local#4
+    inputs_from:
+      - handle: online_url
+        value: https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/1724045037_humidity_result.csv
+      - handle: file_name
+        value: humidity_result.csv
+      - handle: folder
+        value: /oomol-storage
+  - task: self::download_to_local
+    node_id: download_to_local#5
+    inputs_from:
+      - handle: online_url
+        value: ""
+        from_node:
+          - node_id: +python#1
+            output_handle: url
+      - handle: file_name
+        value: yield.csv
+      - handle: folder
+        value: /oomol-storage
+  - task:
+      ui:
+        default_width: 530
+      icon: ":logos:python:"
+      inputs_def:
+        - handle: url
+          description: Input
+          json_schema:
+            contentMediaType: oomol/var
+            type: string
+            enum:
+              - https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/wheat.csv
+              - https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/soybean.csv
+              - https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/rice.csv
+              - https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/corn.csv
+          value: ""
+      outputs_def:
+        - handle: url
+          description: Output
+          json_schema:
+            contentMediaType: oomol/var
+      executor:
+        name: python
+        options:
+          language: python
+          source: >-
+            from oocana import Context
+
+
+            # "in", "out" is the default node key.
+
+            # Redefine the name and type of the node, change it manually below.
+
+            # Click on the gear(⚙) to configure the input output UI
+
+
+            def main(inputs: dict, context: Context):
+              # inputs.get("in") -> help you get node input value
+
+              # preview pandas dataframe
+              # context.preview(df)
+
+              # context.preview({
+              #   # type can be "image", "video", "audio", "markdown", "table", "iframe"
+              #   "type": "image",
+              #   # data can be file path, base64, pandas dataframe
+              #   "data": "",
+              # })
+
+              return { "url": inputs.get("url") }
+          spawn: false
+    title: "Python #1"
+    node_id: +python#1
+    inputs_from:
+      - handle: in
+        value: ""
+      - handle: url
+        value: https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/wheat.csv

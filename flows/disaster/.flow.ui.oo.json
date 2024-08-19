@@ -13,8 +13,8 @@
         "x": 507,
         "y": -507
       },
-      "width": 214,
-      "height": 176
+      "width": 212,
+      "height": 180
     },
     {
       "id": "993f691c-6210-4e86-b7ed-0c1e0d28aa14",
@@ -29,8 +29,8 @@
         "x": 130,
         "y": -598
       },
-      "width": 214,
-      "height": 92
+      "width": 212,
+      "height": 96
     },
     {
       "id": "02106c8c-114b-43d4-b114-837b3d062101",
@@ -45,8 +45,8 @@
         "x": 169,
         "y": -260
       },
-      "width": 214,
-      "height": 92
+      "width": 212,
+      "height": 96
     },
     {
       "id": "3fb302c1-31d0-493f-9d4a-1c66280bef46",
@@ -61,8 +61,8 @@
         "x": 143,
         "y": 13
       },
-      "width": 214,
-      "height": 92
+      "width": 212,
+      "height": 96
     },
     {
       "id": "e8fd600f-b0d1-480f-8523-6bbfb65e717a",
@@ -77,8 +77,8 @@
         "x": 130,
         "y": 403
       },
-      "width": 214,
-      "height": 92
+      "width": 212,
+      "height": 96
     },
     {
       "id": "18700525-f2c7-4c20-8f60-3b48401f82a3",
@@ -93,8 +93,8 @@
         "x": 520,
         "y": -169
       },
-      "width": 214,
-      "height": 176
+      "width": 212,
+      "height": 180
     },
     {
       "id": "4ad3c728-e019-44d5-8d6b-d41800ee22c9",
@@ -109,8 +109,8 @@
         "x": 507,
         "y": 91
       },
-      "width": 214,
-      "height": 176
+      "width": 212,
+      "height": 180
     },
     {
       "id": "ae28cfae-06d4-4435-b3f1-da90f7c34244",
@@ -125,8 +125,8 @@
         "x": 507,
         "y": 481
       },
-      "width": 214,
-      "height": 176
+      "width": 212,
+      "height": 180
     },
     {
       "id": "6b081ee2-fce1-4cba-bb92-4ff6ae4305ef",
@@ -141,8 +141,8 @@
         "x": 845,
         "y": 364
       },
-      "width": 214,
-      "height": 288
+      "width": 212,
+      "height": 292
     },
     {
       "id": "d3fba861-f4d7-4b9c-a6f8-0b861625a886",
@@ -157,8 +157,8 @@
         "x": 910,
         "y": -13
       },
-      "width": 214,
-      "height": 288
+      "width": 212,
+      "height": 292
     },
     {
       "id": "8a404134-d28a-4416-9f84-58ae9eb75f1d",
@@ -173,8 +173,8 @@
         "x": 962,
         "y": -377
       },
-      "width": 214,
-      "height": 288
+      "width": 212,
+      "height": 292
     },
     {
       "id": "f1d759e0-3ce3-41a5-b346-b00147aeff80",
@@ -189,8 +189,8 @@
         "x": 871,
         "y": -702
       },
-      "width": 214,
-      "height": 288
+      "width": 212,
+      "height": 292
     },
     {
       "id": "5eeb7156-d522-45a5-a56c-e79c936b5f90",
@@ -205,7 +205,7 @@
         "x": 1222,
         "y": 91
       },
-      "width": 214,
+      "width": 212,
       "height": 127
     },
     {
@@ -221,7 +221,7 @@
         "x": 1222,
         "y": -221
       },
-      "width": 214,
+      "width": 212,
       "height": 127
     },
     {
@@ -237,23 +237,23 @@
         "x": 1183,
         "y": 494
       },
-      "width": 214,
+      "width": 212,
       "height": 127
     },
     {
       "id": "fe155a28-4ff3-411b-85d1-d462f00c7c79",
       "contentWidth": 200,
-      "selected": false,
+      "selected": true,
       "dragging": false,
       "position": {
-        "x": 1196,
-        "y": -832
+        "x": 1395,
+        "y": -689.9608010507953
       },
       "positionAbsolute": {
-        "x": 1196,
-        "y": -832
+        "x": 1401.5906670481504,
+        "y": -689.9608010507953
       },
-      "width": 214,
+      "width": 212,
       "height": 127
     },
     {
@@ -262,15 +262,15 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 1508,
-        "y": -546
+        "x": 1739,
+        "y": -642
       },
       "positionAbsolute": {
-        "x": 1508,
-        "y": -546
+        "x": 1739,
+        "y": -641
       },
-      "width": 214,
-      "height": 92
+      "width": 212,
+      "height": 96
     },
     {
       "id": "ce09cc7b-6419-43e5-9ed7-99a185a67479",
@@ -285,13 +285,13 @@
         "x": 1638,
         "y": 0
       },
-      "width": 218,
-      "height": 204
+      "width": 216,
+      "height": 208
     },
     {
       "id": "images_preview#1",
-      "contentWidth": 200,
-      "selected": true,
+      "contentWidth": 425.7260172774197,
+      "selected": false,
       "dragging": false,
       "position": {
         "x": 1989,
@@ -301,11 +301,222 @@
         "x": 1989,
         "y": -91
       },
-      "width": 214,
-      "height": 271
+      "width": 438,
+      "height": 486
+    },
+    {
+      "id": "download_to_local#1",
+      "contentWidth": 530,
+      "selected": false,
+      "dragging": false,
+      "position": {
+        "x": -607,
+        "y": -169
+      },
+      "positionAbsolute": {
+        "x": -607,
+        "y": -170
+      },
+      "width": 542,
+      "height": 152
+    },
+    {
+      "id": "download_to_local#2",
+      "contentWidth": 530,
+      "selected": false,
+      "dragging": false,
+      "position": {
+        "x": -621.5,
+        "y": 127
+      },
+      "positionAbsolute": {
+        "x": -621.5,
+        "y": 128.5
+      },
+      "width": 542,
+      "height": 152
+    },
+    {
+      "id": "download_to_local#3",
+      "contentWidth": 530,
+      "selected": false,
+      "dragging": false,
+      "position": {
+        "x": -531.5,
+        "y": -546
+      },
+      "positionAbsolute": {
+        "x": -531.5,
+        "y": -545
+      },
+      "width": 542,
+      "height": 152
+    },
+    {
+      "id": "download_to_local#4",
+      "contentWidth": 530,
+      "selected": false,
+      "dragging": false,
+      "position": {
+        "x": -531.5,
+        "y": 434
+      },
+      "positionAbsolute": {
+        "x": -529.5,
+        "y": 434
+      },
+      "width": 542,
+      "height": 152
+    },
+    {
+      "id": "download_to_local#5",
+      "contentWidth": 530,
+      "selected": false,
+      "dragging": false,
+      "position": {
+        "x": 1302.8872734431702,
+        "y": -941.0953759643662
+      },
+      "positionAbsolute": {
+        "x": 1302.8872734431702,
+        "y": -941.0953759643662
+      },
+      "width": 542,
+      "height": 152
+    },
+    {
+      "id": "+python#1",
+      "contentWidth": 530,
+      "selected": false,
+      "dragging": false,
+      "position": {
+        "x": 303,
+        "y": -1300.5764223684575
+      },
+      "positionAbsolute": {
+        "x": 298.5008942700265,
+        "y": -1300.5764223684575
+      },
+      "width": 542,
+      "height": 521
     }
   ],
   "edges": [
+    {
+      "id": "1febb27c-cd0f-4ddc-a1c5-dbe5c42fa8bd",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "download_to_local#3",
+            "output_handle": "file_address"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "993f691c-6210-4e86-b7ed-0c1e0d28aa14",
+            "input_handle": "csv"
+          }
+        }
+      },
+      "gradientColor": [
+        "var(--edge-json)",
+        "var(--edge-json)"
+      ]
+    },
+    {
+      "id": "ebb27ccd-0fcd-4ca1-85db-e5c42fa8bdcf",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "download_to_local#1",
+            "output_handle": "file_address"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "02106c8c-114b-43d4-b114-837b3d062101",
+            "input_handle": "csv"
+          }
+        }
+      },
+      "gradientColor": [
+        "var(--edge-json)",
+        "var(--edge-json)"
+      ]
+    },
+    {
+      "id": "b27ccd0f-cddc-41c5-9be5-c42fa8bdcf6a",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "download_to_local#2",
+            "output_handle": "file_address"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "3fb302c1-31d0-493f-9d4a-1c66280bef46",
+            "input_handle": "csv"
+          }
+        }
+      },
+      "gradientColor": [
+        "var(--edge-json)",
+        "var(--edge-json)"
+      ]
+    },
+    {
+      "id": "7ccd0fcd-dca1-45db-a5c4-2fa8bdcf6ae7",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "download_to_local#4",
+            "output_handle": "file_address"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "e8fd600f-b0d1-480f-8523-6bbfb65e717a",
+            "input_handle": "csv"
+          }
+        }
+      },
+      "gradientColor": [
+        "var(--edge-json)",
+        "var(--edge-json)"
+      ]
+    },
+    {
+      "id": "cd0fcddc-a1c5-4be5-842f-a8bdcf6ae7a2",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "download_to_local#5",
+            "output_handle": "file_address"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "a1a63c59-59e7-430c-881b-754ec24e9841",
+            "input_handle": "csv"
+          }
+        }
+      },
+      "gradientColor": [
+        "var(--edge-json)",
+        "var(--edge-json)"
+      ]
+    },
     {
       "id": "21861284-1f64-4c69-bf9d-bd94a35a2e9d",
       "connection": {
@@ -323,7 +534,11 @@
             "input_handle": "climate_data"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "8612841f-64ec-497f-9dbd-94a35a2e9d6e",
@@ -342,7 +557,11 @@
             "input_handle": "climate_data"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "12841f64-ec69-4f9d-bd94-a35a2e9d6e10",
@@ -361,7 +580,11 @@
             "input_handle": "climate_data"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "841f64ec-697f-4dbd-94a3-5a2e9d6e10b9",
@@ -380,7 +603,11 @@
             "input_handle": "climate_data"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "1f64ec69-7f9d-4d94-a35a-2e9d6e10b9ed",
@@ -399,7 +626,11 @@
             "input_handle": "weekly_stats"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "64ec697f-9dbd-44a3-9a2e-9d6e10b9edec",
@@ -418,7 +649,11 @@
             "input_handle": "climate_data"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "ec697f9d-bd94-435a-ae9d-6e10b9edecee",
@@ -437,7 +672,11 @@
             "input_handle": "weekly_stats"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "697f9dbd-94a3-4a2e-9d6e-10b9edecee5e",
@@ -456,7 +695,11 @@
             "input_handle": "climate_data"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "7f9dbd94-a35a-4e9d-ae10-b9edecee5eb0",
@@ -475,7 +718,11 @@
             "input_handle": "climate_data"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "9dbd94a3-5a2e-4d6e-90b9-edecee5eb0a0",
@@ -494,7 +741,11 @@
             "input_handle": "weekly_stats"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "bd94a35a-2e9d-4e10-b9ed-ecee5eb0a0f5",
@@ -513,7 +764,11 @@
             "input_handle": "weekly_stats"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "94a35a2e-9d6e-40b9-adec-ee5eb0a0f5a7",
@@ -532,7 +787,11 @@
             "input_handle": "climate_data"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "a35a2e9d-6e10-49ed-acee-5eb0a0f5a761",
@@ -551,7 +810,11 @@
             "input_handle": "disaster"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "5a2e9d6e-10b9-4dec-ae5e-b0a0f5a7613e",
@@ -570,7 +833,11 @@
             "input_handle": "disaster"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "2e9d6e10-b9ed-4cee-9eb0-a0f5a7613e0b",
@@ -589,7 +856,11 @@
             "input_handle": "disaster"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "9d6e10b9-edec-4e5e-b0a0-f5a7613e0bb0",
@@ -608,10 +879,15 @@
             "input_handle": "disaster"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "6e10b9ed-ecee-4eb0-a0f5-a7613e0bb0a1",
+      "selected": false,
       "connection": {
         "from": {
           "type": "from_node",
@@ -627,10 +903,15 @@
             "input_handle": "precipitation_disaster"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "10b9edec-ee5e-40a0-b5a7-613e0bb0a1f9",
+      "selected": false,
       "connection": {
         "from": {
           "type": "from_node",
@@ -646,10 +927,15 @@
             "input_handle": "wind_disaster"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "b9edecee-5eb0-40f5-a761-3e0bb0a1f9d2",
+      "selected": false,
       "connection": {
         "from": {
           "type": "from_node",
@@ -665,10 +951,15 @@
             "input_handle": "humidity_disaster"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "edecee5e-b0a0-45a7-a13e-0bb0a1f9d242",
+      "selected": false,
       "connection": {
         "from": {
           "type": "from_node",
@@ -684,10 +975,15 @@
             "input_handle": "yield_data"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "ecee5eb0-a0f5-4761-be0b-b0a1f9d242e1",
+      "selected": false,
       "connection": {
         "from": {
           "type": "from_node",
@@ -703,10 +999,15 @@
             "input_handle": "tmp_disaster"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "0d8c8fcc-4889-437f-99f2-cab624d0ad42",
+      "selected": false,
       "connection": {
         "from": {
           "type": "from_node",
@@ -722,7 +1023,34 @@
             "input_handle": "images"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-json)",
+        "var(--edge-json)"
+      ]
+    },
+    {
+      "id": "0fcddca1-c5db-45c4-afa8-bdcf6ae7a25d",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "+python#1",
+            "output_handle": "url"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "download_to_local#5",
+            "input_handle": "online_url"
+          }
+        }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     }
   ]
 }
