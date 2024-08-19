@@ -292,3 +292,5 @@ dist
 .pnp.*
 
 .DS_Store
+
+.scriptlets/
