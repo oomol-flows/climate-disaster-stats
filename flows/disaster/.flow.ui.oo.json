@@ -6,15 +6,15 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 507,
-        "y": -507
+        "x": 471.62781091021293,
+        "y": -696.4434495493499
       },
       "positionAbsolute": {
-        "x": 507,
-        "y": -507
+        "x": 471.62781091021293,
+        "y": -696.4434495493499
       },
-      "width": 212,
-      "height": 183
+      "width": 434,
+      "height": 327
     },
     {
       "id": "993f691c-6210-4e86-b7ed-0c1e0d28aa14",
@@ -22,15 +22,15 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 130,
-        "y": -598
+        "x": -31.52563603019371,
+        "y": -843.6818497602106
       },
       "positionAbsolute": {
-        "x": 130,
-        "y": -598
+        "x": -31.52563603019371,
+        "y": -843.6818497602106
       },
-      "width": 212,
-      "height": 99
+      "width": 434,
+      "height": 237
     },
     {
       "id": "02106c8c-114b-43d4-b114-837b3d062101",
@@ -38,15 +38,15 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 169,
-        "y": -260
+        "x": -100.12755914719753,
+        "y": -440.61717591716814
       },
       "positionAbsolute": {
-        "x": 169,
-        "y": -260
+        "x": -107.08625461624274,
+        "y": -440.61717591716814
       },
-      "width": 212,
-      "height": 99
+      "width": 434,
+      "height": 237
     },
     {
       "id": "3fb302c1-31d0-493f-9d4a-1c66280bef46",
@@ -54,15 +54,15 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 143,
-        "y": 13
+        "x": -84.06159258158277,
+        "y": -24
       },
       "positionAbsolute": {
-        "x": 143,
-        "y": 13
+        "x": -84.06159258158277,
+        "y": -28.28392592392416
       },
-      "width": 212,
-      "height": 99
+      "width": 434,
+      "height": 237
     },
     {
       "id": "e8fd600f-b0d1-480f-8523-6bbfb65e717a",
@@ -70,15 +70,15 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 130,
-        "y": 403
+        "x": -100.12755914719753,
+        "y": 397.83950925950944
       },
       "positionAbsolute": {
-        "x": 130,
-        "y": 403
+        "x": -99.64183795182805,
+        "y": 397.83950925950944
       },
-      "width": 212,
-      "height": 99
+      "width": 434,
+      "height": 237
     },
     {
       "id": "18700525-f2c7-4c20-8f60-3b48401f82a3",
@@ -87,14 +87,14 @@
       "dragging": false,
       "position": {
         "x": 520,
-        "y": -169
+        "y": -266.6074952630113
       },
       "positionAbsolute": {
         "x": 520,
-        "y": -169
+        "y": -266.6074952630113
       },
-      "width": 212,
-      "height": 183
+      "width": 434,
+      "height": 327
     },
     {
       "id": "4ad3c728-e019-44d5-8d6b-d41800ee22c9",
@@ -103,14 +103,14 @@
       "dragging": false,
       "position": {
         "x": 507,
-        "y": 91
+        "y": 239.03705555705687
       },
       "positionAbsolute": {
         "x": 507,
-        "y": 91
+        "y": 242.60313094042175
       },
-      "width": 212,
-      "height": 183
+      "width": 434,
+      "height": 327
     },
     {
       "id": "ae28cfae-06d4-4435-b3f1-da90f7c34244",
@@ -118,15 +118,15 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 507,
-        "y": 481
+        "x": 380.3782568483575,
+        "y": 942.8639212739014
       },
       "positionAbsolute": {
-        "x": 507,
-        "y": 481
+        "x": 377.98773148773694,
+        "y": 942.8639212739014
       },
-      "width": 212,
-      "height": 183
+      "width": 434,
+      "height": 327
     },
     {
       "id": "6b081ee2-fce1-4cba-bb92-4ff6ae4305ef",
@@ -134,15 +134,15 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 845,
-        "y": 364
+        "x": 1001.0880381257891,
+        "y": 781.9997499797319
       },
       "positionAbsolute": {
-        "x": 845,
-        "y": 364
+        "x": 1004.975212955206,
+        "y": 781.9997499797319
       },
-      "width": 212,
-      "height": 292
+      "width": 434,
+      "height": 447
     },
     {
       "id": "d3fba861-f4d7-4b9c-a6f8-0b861625a886",
@@ -150,15 +150,15 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 910,
-        "y": -13
+        "x": 1034.8395330486378,
+        "y": 119.03705555705687
       },
       "positionAbsolute": {
-        "x": 910,
-        "y": -13
+        "x": 1034.8395330486378,
+        "y": 123.74552099541626
       },
-      "width": 212,
-      "height": 292
+      "width": 434,
+      "height": 447
     },
     {
       "id": "8a404134-d28a-4416-9f84-58ae9eb75f1d",
@@ -166,15 +166,15 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 962,
-        "y": -377
+        "x": 1052.3085879585847,
+        "y": -411.6543564843591
       },
       "positionAbsolute": {
-        "x": 962,
-        "y": -377
+        "x": 1052.3085879585847,
+        "y": -411.6543564843591
       },
-      "width": 212,
-      "height": 292
+      "width": 434,
+      "height": 447
     },
     {
       "id": "f1d759e0-3ce3-41a5-b346-b00147aeff80",
@@ -182,15 +182,15 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 871,
-        "y": -702
+        "x": 1001.0880381257891,
+        "y": -1045.4293511265923
       },
       "positionAbsolute": {
-        "x": 871,
-        "y": -702
+        "x": 1001.0880381257891,
+        "y": -1045.4293511265923
       },
-      "width": 212,
-      "height": 292
+      "width": 434,
+      "height": 447
     },
     {
       "id": "5eeb7156-d522-45a5-a56c-e79c936b5f90",
@@ -198,15 +198,15 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 1222,
-        "y": 91
+        "x": 1531.6294444294313,
+        "y": 119.03705555705687
       },
       "positionAbsolute": {
-        "x": 1222,
-        "y": 91
+        "x": 1531.6294444294313,
+        "y": 121.96294444294313
       },
-      "width": 212,
-      "height": 127
+      "width": 434,
+      "height": 197
     },
     {
       "id": "5deef54c-b9ed-4cf3-ad78-bc5f7b279a20",
@@ -214,15 +214,15 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 1222,
-        "y": -221
+        "x": 1510.987481467469,
+        "y": -339.6912870312819
       },
       "positionAbsolute": {
-        "x": 1222,
-        "y": -221
+        "x": 1510.987481467469,
+        "y": -339.6912870312819
       },
-      "width": 212,
-      "height": 127
+      "width": 434,
+      "height": 197
     },
     {
       "id": "01c77df3-f634-4c3c-8fd7-f682be4e236c",
@@ -230,31 +230,31 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 1183,
-        "y": 494
+        "x": 1681.7158240558078,
+        "y": 881.036805536789
       },
       "positionAbsolute": {
-        "x": 1183,
-        "y": 494
+        "x": 1678.4071110870896,
+        "y": 881.036805536789
       },
-      "width": 212,
-      "height": 127
+      "width": 434,
+      "height": 197
     },
     {
       "id": "fe155a28-4ff3-411b-85d1-d462f00c7c79",
       "contentWidth": 200,
-      "selected": true,
+      "selected": false,
       "dragging": false,
       "position": {
-        "x": 1395,
-        "y": -689.9608010507953
+        "x": 1459.5061342561316,
+        "y": -1012.4914723314528
       },
       "positionAbsolute": {
-        "x": 1401.5906670481504,
-        "y": -689.9608010507953
+        "x": 1459.5061342561316,
+        "y": -1012.4914723314528
       },
-      "width": 212,
-      "height": 127
+      "width": 434,
+      "height": 197
     },
     {
       "id": "a1a63c59-59e7-430c-881b-754ec24e9841",
@@ -262,15 +262,15 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 1739,
-        "y": -642
+        "x": 1910.830504313733,
+        "y": -1263.799084962382
       },
       "positionAbsolute": {
-        "x": 1739,
-        "y": -641
+        "x": 1910.830504313733,
+        "y": -1263.799084962382
       },
-      "width": 212,
-      "height": 99
+      "width": 434,
+      "height": 237
     },
     {
       "id": "ce09cc7b-6419-43e5-9ed7-99a185a67479",
@@ -278,15 +278,15 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 1638,
-        "y": 0
+        "x": 2107.604657384637,
+        "y": 18.061717591716842
       },
       "positionAbsolute": {
-        "x": 1638,
-        "y": 0
+        "x": 2107.604657384637,
+        "y": 18.061717591716842
       },
-      "width": 216,
-      "height": 199
+      "width": 434,
+      "height": 357
     },
     {
       "id": "images_preview#1",
@@ -294,122 +294,122 @@
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 1989,
-        "y": -91
+        "x": 2572.1354536754284,
+        "y": 0
       },
       "positionAbsolute": {
-        "x": 1989,
-        "y": -91
+        "x": 2572.1354536754284,
+        "y": 1.888833328829321
       },
-      "width": 438,
-      "height": 285
+      "width": 440,
+      "height": 254
     },
     {
-      "id": "download_to_local#1",
-      "contentWidth": 530,
-      "selected": false,
-      "dragging": false,
-      "position": {
-        "x": -607,
-        "y": -169
-      },
-      "positionAbsolute": {
-        "x": -607,
-        "y": -170
-      },
-      "width": 542,
-      "height": 155
-    },
-    {
-      "id": "download_to_local#2",
-      "contentWidth": 530,
-      "selected": false,
-      "dragging": false,
-      "position": {
-        "x": -621.5,
-        "y": 127
-      },
-      "positionAbsolute": {
-        "x": -621.5,
-        "y": 128.5
-      },
-      "width": 542,
-      "height": 155
-    },
-    {
-      "id": "download_to_local#3",
-      "contentWidth": 530,
-      "selected": false,
-      "dragging": false,
-      "position": {
-        "x": -531.5,
-        "y": -546
-      },
-      "positionAbsolute": {
-        "x": -531.5,
-        "y": -545
-      },
-      "width": 542,
-      "height": 155
-    },
-    {
-      "id": "download_to_local#4",
-      "contentWidth": 530,
-      "selected": false,
-      "dragging": false,
-      "position": {
-        "x": -531.5,
-        "y": 434
-      },
-      "positionAbsolute": {
-        "x": -529.5,
-        "y": 434
-      },
-      "width": 542,
-      "height": 155
-    },
-    {
-      "id": "download_to_local#5",
-      "contentWidth": 530,
-      "selected": false,
-      "dragging": false,
-      "position": {
-        "x": 1302.8872734431702,
-        "y": -941.0953759643662
-      },
-      "positionAbsolute": {
-        "x": 1302.8872734431702,
-        "y": -941.0953759643662
-      },
-      "width": 542,
-      "height": 155
-    },
-    {
+      "scriptletFolded": true,
+      "previewFolded": true,
       "id": "+python#1",
       "contentWidth": 530,
+      "cardCollapse": {
+        "scriptlet": true
+      },
       "selected": false,
       "dragging": false,
       "position": {
-        "x": 303,
-        "y": -1300.5764223684575
+        "x": 333.87244085280247,
+        "y": -1762.799084962382
       },
       "positionAbsolute": {
-        "x": 298.5008942700265,
-        "y": -1300.5764223684575
+        "x": 331.14932626337986,
+        "y": -1764.342448009538
       },
-      "width": 542,
-      "height": 524
+      "width": 544,
+      "height": 279
+    },
+    {
+      "id": "download_file#1",
+      "contentWidth": 384.7631059344005,
+      "selected": false,
+      "dragging": false,
+      "position": {
+        "x": -585.2631059344004,
+        "y": -950.3855132420895
+      },
+      "positionAbsolute": {
+        "x": -585.2631059344004,
+        "y": -950.3855132420895
+      },
+      "width": 434,
+      "height": 297
+    },
+    {
+      "id": "download_file#2",
+      "contentWidth": 363.430666170512,
+      "selected": false,
+      "dragging": false,
+      "position": {
+        "x": -609.1617592881917,
+        "y": -427.20681096207466
+      },
+      "positionAbsolute": {
+        "x": -445.7310931176797,
+        "y": -427.20681096207466
+      },
+      "width": 434,
+      "height": 297
+    },
+    {
+      "id": "download_file#3",
+      "contentWidth": 377.84717157109066,
+      "selected": false,
+      "dragging": false,
+      "position": {
+        "x": -618.0156203195208,
+        "y": -61
+      },
+      "positionAbsolute": {
+        "x": -618.0156203195208,
+        "y": -61
+      },
+      "width": 434,
+      "height": 297
+    },
+    {
+      "id": "download_file#4",
+      "contentWidth": 412.15163739472575,
+      "selected": false,
+      "dragging": false,
+      "position": {
+        "x": -627.0163924760268,
+        "y": 316.0370555570569
+      },
+      "positionAbsolute": {
+        "x": -627.0163924760268,
+        "y": 316.0370555570569
+      },
+      "width": 434,
+      "height": 297
+    },
+    {
+      "id": "download_file#5",
+      "contentWidth": 200,
+      "selected": false,
+      "position": {
+        "x": 1233.0125819597336,
+        "y": -1443.032122830059
+      },
+      "width": 434,
+      "height": 297
     }
   ],
   "edges": [
     {
-      "id": "1febb27c-cd0f-4ddc-a1c5-dbe5c42fa8bd",
+      "id": "f2035ce3-2b35-42ed-af42-a9d0a6efab23",
       "connection": {
         "from": {
           "type": "from_node",
           "source": {
-            "node_id": "download_to_local#3",
-            "output_handle": "file_address"
+            "node_id": "download_file#1",
+            "output_handle": "file_path"
           }
         },
         "to": {
@@ -426,13 +426,13 @@
       ]
     },
     {
-      "id": "ebb27ccd-0fcd-4ca1-85db-e5c42fa8bdcf",
+      "id": "035ce32b-35f2-4def-82a9-d0a6efab2367",
       "connection": {
         "from": {
           "type": "from_node",
           "source": {
-            "node_id": "download_to_local#1",
-            "output_handle": "file_address"
+            "node_id": "download_file#2",
+            "output_handle": "file_path"
           }
         },
         "to": {
@@ -449,13 +449,13 @@
       ]
     },
     {
-      "id": "b27ccd0f-cddc-41c5-9be5-c42fa8bdcf6a",
+      "id": "5ce32b35-f2ed-4f42-a9d0-a6efab2367fd",
       "connection": {
         "from": {
           "type": "from_node",
           "source": {
-            "node_id": "download_to_local#2",
-            "output_handle": "file_address"
+            "node_id": "download_file#3",
+            "output_handle": "file_path"
           }
         },
         "to": {
@@ -472,13 +472,13 @@
       ]
     },
     {
-      "id": "7ccd0fcd-dca1-45db-a5c4-2fa8bdcf6ae7",
+      "id": "e32b35f2-edef-42a9-90a6-efab2367fd56",
       "connection": {
         "from": {
           "type": "from_node",
           "source": {
-            "node_id": "download_to_local#4",
-            "output_handle": "file_address"
+            "node_id": "download_file#4",
+            "output_handle": "file_path"
           }
         },
         "to": {
@@ -495,13 +495,13 @@
       ]
     },
     {
-      "id": "cd0fcddc-a1c5-4be5-842f-a8bdcf6ae7a2",
+      "id": "d862ad6a-0fc1-4129-95f3-1fc4fa6329ff",
       "connection": {
         "from": {
           "type": "from_node",
           "source": {
-            "node_id": "download_to_local#5",
-            "output_handle": "file_address"
+            "node_id": "download_file#5",
+            "output_handle": "file_path"
           }
         },
         "to": {
@@ -1030,7 +1030,7 @@
       ]
     },
     {
-      "id": "0fcddca1-c5db-45c4-afa8-bdcf6ae7a25d",
+      "id": "62ad6a0f-c1a1-4995-b31f-c4fa6329ffbe",
       "connection": {
         "from": {
           "type": "from_node",
@@ -1042,14 +1042,14 @@
         "to": {
           "type": "to_node",
           "target": {
-            "node_id": "download_to_local#5",
-            "input_handle": "online_url"
+            "node_id": "download_file#5",
+            "input_handle": "url"
           }
         }
       },
       "gradientColor": [
-        "var(--edge-python)",
-        "var(--edge-python)"
+        "var(--edge-json)",
+        "var(--edge-json)"
       ]
     }
   ]

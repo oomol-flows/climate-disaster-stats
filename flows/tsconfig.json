@@ -1,0 +1,19 @@
+{
+  "include": ["*/scriptlets/**/*"],
+  "compilerOptions": {
+    "strict": true,
+    "target": "ESNext",
+    "module": "Preserve",
+    "types": [],
+    "skipLibCheck": true,
+    "noEmit": true,
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
+    "useUnknownInCatchVariables": false,
+    "useDefineForClassFields": false,
+    "moduleDetection": "force",
+    "paths": {
+      "~/*": ["../*"]
+    }
+  }
+}
