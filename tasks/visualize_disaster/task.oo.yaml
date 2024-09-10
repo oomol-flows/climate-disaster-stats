@@ -1,6 +1,6 @@
 type: task_block
 title: Visualize Disaster
-icon: https://static.oomol.com/icons/python.png
+icon: ":fa6-solid:chart-area:currentColor:"
 executor:
   name: python
   options:

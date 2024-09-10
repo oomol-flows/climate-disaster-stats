@@ -1,6 +1,6 @@
 type: task_block
 title: Weekly Stats
-icon: https://static.oomol.com/icons/python.png
+icon: ":fa6-solid:calendar-days:currentColor:"
 executor:
   name: python
   options:

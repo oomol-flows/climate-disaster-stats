@@ -1,6 +1,6 @@
 type: task_block
 title: Classify Data
-icon: https://static.oomol.com/icons/python.png
+icon: ":fa6-solid:table-cells:currentColor:"
 executor:
   name: python
   options:

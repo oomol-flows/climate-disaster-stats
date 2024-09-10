@@ -1,6 +1,6 @@
 type: task_block
 title: Read Dataframe
-icon: https://static.oomol.com/icons/python.png
+icon: ":fa6-solid:file-import:currentColor:"
 executor:
   name: python
   options:
