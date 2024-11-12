@@ -1,0 +1,6 @@
+icon: https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/1724146494_agriculture.png
+scripts:
+  # Script executed when the container is first loaded
+  # eg: bootstrap: pip install pandas
+  bootstrap: |
+    pnpm install && pip install -r requirements.txt

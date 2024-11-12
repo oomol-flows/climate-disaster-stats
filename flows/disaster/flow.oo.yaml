@@ -252,7 +252,7 @@ nodes:
           - node_id: d3fba861-f4d7-4b9c-a6f8-0b861625a886
             output_handle: disaster
       - handle: dir
-        value: /oomol-storage
+        value: /oomol-driver/oomol-storage
       - handle: name
         value: wind_disaster
     title: "Save Disaster #3"
@@ -264,7 +264,7 @@ nodes:
           - node_id: 8a404134-d28a-4416-9f84-58ae9eb75f1d
             output_handle: disaster
       - handle: dir
-        value: /oomol-storage
+        value: /oomol-driver/oomol-storage
       - handle: name
         value: precipitation_disaster
     title: "Save Disaster #2"
@@ -276,7 +276,7 @@ nodes:
           - node_id: 6b081ee2-fce1-4cba-bb92-4ff6ae4305ef
             output_handle: disaster
       - handle: dir
-        value: /oomol-storage
+        value: /oomol-driver/oomol-storage
       - handle: name
         value: humidity_disaster
     title: "Save Disaster #4"
@@ -286,7 +286,7 @@ nodes:
       - handle: name
         value: tmp_disaster
       - handle: dir
-        value: /oomol-storage
+        value: /oomol-driver/oomol-storage
       - handle: disaster
         from_node:
           - node_id: f1d759e0-3ce3-41a5-b346-b00147aeff80
@@ -368,7 +368,7 @@ nodes:
       - handle: file_name
         value: temp_result.csv
       - handle: folder
-        value: /oomol-storage
+        value: /oomol-driver/oomol-storage
   - task: tools::download_file
     title: "Download File #2"
     node_id: download_file#2
@@ -378,7 +378,7 @@ nodes:
       - handle: file_name
         value: precipitation_result.csv
       - handle: folder
-        value: /oomol-storage
+        value: /oomol-driver/oomol-storage
   - task: tools::download_file
     title: "Download File #3"
     node_id: download_file#3
@@ -388,7 +388,7 @@ nodes:
       - handle: file_name
         value: wind_result.csv
       - handle: folder
-        value: /oomol-storage
+        value: /oomol-driver/oomol-storage
   - task: tools::download_file
     title: "Download File #4"
     node_id: download_file#4
@@ -398,7 +398,7 @@ nodes:
       - handle: file_name
         value: humidity_result.csv
       - handle: folder
-        value: /oomol-storage
+        value: /oomol-driver/oomol-storage
   - task: tools::download_file
     title: "Download File #5"
     node_id: download_file#5
@@ -408,6 +408,6 @@ nodes:
           - node_id: +python#1
             output_handle: url
       - handle: folder
-        value: /oomol-storage/
+        value: /oomol-driver/oomol-storage
       - handle: file_name
         value: wheat.csv
