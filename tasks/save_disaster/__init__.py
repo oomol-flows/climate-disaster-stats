@@ -1,10 +1,11 @@
+from oocana import Context
 import pandas as pd
 import os
 
-def main(inputs: dict, context):
+def main(params: dict, context: Context):
 
-  data: pd.DataFrame = inputs["disaster"]
+  data: pd.DataFrame = params["disaster"]
 
-  data.to_csv(os.path.join(inputs["dir"], inputs["name"] + ".csv"), index=False)
+  data.to_csv(os.path.join(params["dir"], params["name"] + ".csv"), index=False)
   
   context.done()
