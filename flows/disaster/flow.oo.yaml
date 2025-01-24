@@ -5,8 +5,8 @@ nodes:
       - handle: csv
         value: /oomol-storage/climate/ClimateData/temp_result.csv
         from_node:
-          - node_id: url-download-to-path#2
-            output_handle: adress
+          - node_id: url_to_path#5
+            output_handle: address
     title: Read Temperature
   - task: self::read_dataframe
     node_id: 02106c8c-114b-43d4-b114-837b3d062101
@@ -14,8 +14,8 @@ nodes:
       - handle: csv
         value: /oomol-storage/climate/ClimateData/precipitation_result.csv
         from_node:
-          - node_id: url-download-to-path#1
-            output_handle: adress
+          - node_id: url_to_path#1
+            output_handle: address
     title: Read Precipitation
   - task: self::read_dataframe
     node_id: 3fb302c1-31d0-493f-9d4a-1c66280bef46
@@ -23,8 +23,8 @@ nodes:
       - handle: csv
         value: /oomol-storage/climate/ClimateData/wind_result.csv
         from_node:
-          - node_id: url-download-to-path#3
-            output_handle: adress
+          - node_id: url_to_path#2
+            output_handle: address
     title: Read Wind
   - task: self::read_dataframe
     node_id: e8fd600f-b0d1-480f-8523-6bbfb65e717a
@@ -32,8 +32,8 @@ nodes:
       - handle: csv
         value: /oomol-storage/climate/ClimateData/humidity_result.csv
         from_node:
-          - node_id: url-download-to-path#4
-            output_handle: adress
+          - node_id: url_to_path#4
+            output_handle: address
     title: Read Humidity
   - task: self::read_dataframe
     node_id: a1a63c59-59e7-430c-881b-754ec24e9841
@@ -41,8 +41,8 @@ nodes:
       - handle: csv
         value: /oomol-storage/climate/yieldData/rice.csv
         from_node:
-          - node_id: url-download-to-path#5
-            output_handle: adress
+          - node_id: url_to_path#3
+            output_handle: address
     title: Read Yield Data
   - task: self::weekly_stats
     node_id: d31b5d46-bb6a-4357-b6bb-54bc349ff3b4
@@ -324,33 +324,37 @@ nodes:
       - handle: images_dir
         value: /oomol-storage/1231231
     title: "Visualize Disaster #1"
-  - task: read-file::url-download-to-path
-    title: "Url Download To Path #1"
-    node_id: url-download-to-path#1
+  - task: oomol-file::url_to_path
+    title: "URL to path  #1"
+    node_id: url_to_path#1
     inputs_from:
       - handle: url
         value: https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/precipitation_result.csv
-  - task: read-file::url-download-to-path
-    title: "Url Download To Path #2"
-    node_id: url-download-to-path#2
-    inputs_from:
-      - handle: url
-        value: https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/temp_result.csv
-  - task: read-file::url-download-to-path
-    title: "Url Download To Path #3"
-    node_id: url-download-to-path#3
+  - node_id: url_to_path#2
+    node_type: task_node
+    title: "URL to path #2"
     inputs_from:
       - handle: url
         value: https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/wind_result.csv
-  - task: read-file::url-download-to-path
-    title: "Url Download To Path #4"
-    node_id: url-download-to-path#4
-    inputs_from:
-      - handle: url
-        value: https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/1724045037_humidity_result.csv
-  - task: read-file::url-download-to-path
-    title: "Url Download To Path #5"
-    node_id: url-download-to-path#5
+    task: oomol-file::url_to_path
+  - node_id: url_to_path#3
+    node_type: task_node
+    title: "URL to path #3"
     inputs_from:
       - handle: url
         value: https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/wheat.csv
+    task: oomol-file::url_to_path
+  - node_id: url_to_path#4
+    node_type: task_node
+    title: "URL to path #4"
+    inputs_from:
+      - handle: url
+        value: https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/1724045037_humidity_result.csv
+    task: oomol-file::url_to_path
+  - node_id: url_to_path#5
+    node_type: task_node
+    title: "URL to path #5"
+    inputs_from:
+      - handle: url
+        value: https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/temp_result.csv
+    task: oomol-file::url_to_path

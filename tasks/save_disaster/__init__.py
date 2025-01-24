@@ -8,4 +8,5 @@ def main(params: dict, context: Context):
 
   data.to_csv(os.path.join(params["dir"], params["name"] + ".csv"), index=False)
   
-  context.done()
+  return {"df": data}
+

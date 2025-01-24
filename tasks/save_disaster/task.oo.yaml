@@ -17,3 +17,7 @@ inputs_def:
   - handle: name
     json_schema:
       type: string
+outputs_def:
+  - handle: df
+    json_schema:
+      contentMediaType: oomol/var

@@ -5,4 +5,10 @@ scripts:
   bootstrap: |
     pnpm install && pip install -r requirements.txt
 dependencies:
-  read-file: 0.0.2
+  oomol-file: 0.0.4
+name: climate-disaster-stats
+version: 0.0.2
+description: agricultural analysis
+displayName: Climate Disaster Stats
+repository: https://github.com/oomol-flows/climate-disaster-stats
+releaseNotes: init
