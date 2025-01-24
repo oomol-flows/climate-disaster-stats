@@ -7,8 +7,8 @@ scripts:
 dependencies:
   oomol-file: 0.0.4
 name: climate-disaster-stats
-version: 0.0.2
+version: 0.0.3
 description: agricultural analysis
 displayName: Climate Disaster Stats
 repository: https://github.com/oomol-flows/climate-disaster-stats
-releaseNotes: init
+releaseNotes: update version and add blocks
