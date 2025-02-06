@@ -1,19 +1,13 @@
 from oocana import Context
 import pandas as pd
 import matplotlib.pyplot as plt
-from PIL import Image
-import io
-import base64
-import numpy as np
+import os
 
 plt.rcParams["font.family"] = "sans-serif"
 plt.rcParams["font.sans-serif"] = ["Source Han Sans SC"]
 
-
 def main(params: dict, context: Context):
-
     yieldData = params["yield_data"]
-
     grouped = yieldData.groupby("name")
 
     df1 = params["tmp_disaster"]
@@ -21,42 +15,31 @@ def main(params: dict, context: Context):
     df3 = params["wind_disaster"]
     df4 = params["humidity_disaster"]
 
-    images = []
+    image_paths = []
+    output_dir = context.session_dir
+
     # Generate and save the plots for each area
     for name, group in grouped:
-
         disasterTmp = df1[df1["市"] == name]
-
         disasterTmp = disasterTmp[["周", "分类", "月", "日期"]]
-
         disasterTmp["num"] = (disasterTmp["周"] - 1) / 4 + (disasterTmp["月"] - 1)
-
         disasterTmp["年"] = pd.to_datetime(disasterTmp["日期"]).dt.year
-
         disasterTmp = disasterTmp[disasterTmp["分类"].isin(["降水多", "降水少"])]
 
         disasterTmp2 = df2[df2["市"] == name]
-
         disasterTmp2 = disasterTmp2[["周", "分类", "月", "日期"]]
-
         disasterTmp2["num"] = (disasterTmp2["周"] - 1) / 4 + (disasterTmp2["月"] - 1)
-
         disasterTmp2["年"] = pd.to_datetime(disasterTmp2["日期"]).dt.year
-
         disasterTmp2 = disasterTmp2[disasterTmp2["分类"].isin(["高温", "低温"])]
 
         disasterTmp3 = df3[df3["市"] == name]
-
         disasterTmp3 = disasterTmp3[["周", "分类", "月", "日期"]]
-
         disasterTmp3["num"] = (disasterTmp3["周"] - 1) / 4 + (disasterTmp3["月"] - 1)
         disasterTmp3["年"] = pd.to_datetime(disasterTmp3["日期"]).dt.year
         disasterTmp3 = disasterTmp3[disasterTmp3["分类"].isin(["风速大", "风速小"])]
 
         disasterTmp4 = df4[df4["市"] == name]
-
         disasterTmp4 = disasterTmp4[["周", "分类", "月", "日期"]]
-
         disasterTmp4["年"] = pd.to_datetime(disasterTmp4["日期"]).dt.year
         disasterTmp4["num"] = (disasterTmp4["周"] - 1) / 4 + (disasterTmp4["月"] - 1)
         disasterTmp4 = disasterTmp4[disasterTmp4["分类"].isin(["湿润", "干旱"])]
@@ -64,7 +47,7 @@ def main(params: dict, context: Context):
         fig, ax1 = plt.subplots()
         ax2 = ax1.twinx()
 
-        # # Plot yieldPerArea vs year
+        # Plot yieldPerArea vs year
         ax1.bar(
             list(group["year"]),
             list(group["yieldPerArea"]),
@@ -139,22 +122,17 @@ def main(params: dict, context: Context):
 
         plt.title(f"灾害对{name}水稻单位面积产量的影响分析")
         plt.legend()
-        img = draw_to_base64(fig)
-        images.append(img)
+
+        # Save the plot to a file
+        image_path = os.path.join(output_dir, f"{name}_plot.png")
+        plt.savefig(image_path)
+        plt.close(fig)
+        image_paths.append(image_path)
+
     context.preview(
         {
             "type": "image",
-            "data": images,
+            "data": image_paths,
         }
     )
-    return {"charts": images}
-
-
-def draw_to_base64(fig):
-    fig.canvas.draw()
-    image_array = np.array(fig.canvas.renderer.buffer_rgba())
-    image = Image.fromarray(image_array)
-    img_byte_arr = io.BytesIO()
-    image.save(img_byte_arr, format="PNG")
-    img_byte_arr.seek(0)
-    return f"data:image/png;base64,{base64.b64encode(img_byte_arr.read()).decode()}"
+    return {"charts": image_paths}

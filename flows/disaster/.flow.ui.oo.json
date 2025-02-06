@@ -137,28 +137,11 @@
       }
     },
     "ce09cc7b-6419-43e5-9ed7-99a185a67479": {
+      "contentWidth": 639.1919085081399,
       "rfNode": {
         "position": {
           "x": 2611.4794236999264,
           "y": 1080
-        }
-      }
-    },
-    "url-download-to-path#2": {
-      "contentWidth": 450,
-      "rfNode": {
-        "position": {
-          "x": 0,
-          "y": 2149.75
-        }
-      }
-    },
-    "url-download-to-path#4": {
-      "contentWidth": 450,
-      "rfNode": {
-        "position": {
-          "x": 0,
-          "y": 1584.75
         }
       }
     },
