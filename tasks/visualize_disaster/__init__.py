@@ -125,7 +125,7 @@ def main(params: dict, context: Context):
 
         # Save the plot to a file
         image_path = os.path.join(output_dir, f"{name}_plot.png")
-        plt.savefig(image_path)
+        plt.savefig(image_path, dpi=300) 
         plt.close(fig)
         image_paths.append(image_path)
 

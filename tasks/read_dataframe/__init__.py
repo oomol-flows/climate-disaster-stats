@@ -15,4 +15,5 @@ def main(params: dict, context: Context):
         raise Exception(f"File {f} is not exist")
 
     data = pd.read_csv(f)
+    context.preview(data)
     return {"dataframe": data}
