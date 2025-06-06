@@ -9,19 +9,19 @@ def main(params: dict, context: Context):
 
     weekly_stats = params["weekly_stats"]
 
-    # 调整1-4月，10-12月正态分布评估标准的标准差范围，数值越小，灾害越多
+    # Adjust the standard deviation range of the normal distribution evaluation criteria for January-April and October-December. The smaller the value, the more disasters.
     sigma1 = params["sigma1"]
 
-    # 调整5-9月正态分布评估标准的标准差范围，数值越小，灾害越多
+    # Adjust the standard deviation range of the normal distribution evaluation criteria for May-September. The smaller the value, the more disasters.
     sigma2 = params["sigma2"]
 
-    # 将日期列转换为日期格式
+    # Convert the date column to date format
     climate_data["日期"] = pd.to_datetime(climate_data["日期"], format="%Y%m%d")
 
-    # 添加一个新的列来表示每年的周数
+    # Add a new column to represent the week number of each year
     climate_data["周"] = climate_data["日期"].dt.isocalendar().week
 
-    # 筛选出2010年至2020年的数据
+    # Filter out data from 2010 to 2020
     data = climate_data[
         (climate_data["日期"].dt.year >= params["year_from"])
         & (climate_data["日期"].dt.year <= params["year_to"])

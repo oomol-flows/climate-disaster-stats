@@ -1,6 +1,6 @@
 type: task_block
 title: Visualize Disaster
-icon: ":fa6-solid:chart-area:currentColor:"
+icon: ":carbon:chart-column:"
 executor:
   name: python
   options:

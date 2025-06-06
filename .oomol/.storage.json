@@ -1,14 +1,20 @@
 {
   "oocana-log-panel": {
-    "viewMode": "events",
-    "sessionViewMode": "current"
+    "viewMode": "events"
   },
   "sharedBlockExplorerInit": false,
   "designer/flow/disaster": {
     "viewport": {
-      "x": -768.0620710439257,
-      "y": -378.3084814683124,
-      "zoom": 0.8095403781241773
+      "x": -1734.5434396581024,
+      "y": -1113.938715763113,
+      "zoom": 0.7635059735388495
+    }
+  },
+  "designer/flow/self-0.0.7/flow/disaster": {
+    "viewport": {
+      "x": 303.4483756328589,
+      "y": 42,
+      "zoom": 0.15374168137987235
     }
   }
 }

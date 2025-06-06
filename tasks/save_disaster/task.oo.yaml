@@ -1,7 +1,7 @@
 type: task_block
 title: Save Disaster
 description: Save Disaster to CSV
-icon: ":fa6-solid:floppy-disk:currentColor:"
+icon: ":carbon:save:"
 executor:
   name: python
   options:

@@ -1,6 +1,6 @@
 type: task_block
 title: Read Dataframe
-icon: ":fa6-solid:file-import:currentColor:"
+icon: ":carbon:port-input:"
 executor:
   name: python
   options:

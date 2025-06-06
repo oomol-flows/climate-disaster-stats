@@ -1,6 +1,6 @@
 type: task_block
 title: Weekly Stats
-icon: ":fa6-solid:calendar-days:currentColor:"
+icon: ":carbon:data-table:"
 executor:
   name: python
   options:

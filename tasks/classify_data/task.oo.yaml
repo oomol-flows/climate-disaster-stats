@@ -1,6 +1,6 @@
 type: task_block
 title: Classify Data
-icon: ":fa6-solid:table-cells:currentColor:"
+icon: ":carbon:table-split:"
 executor:
   name: python
   options:

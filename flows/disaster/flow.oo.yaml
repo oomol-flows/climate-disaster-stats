@@ -26,6 +26,7 @@ nodes:
           - node_id: url_to_path#2
             output_handle: address
     title: Read Wind
+    description: ""
   - task: self::read_dataframe
     node_id: e8fd600f-b0d1-480f-8523-6bbfb65e717a
     inputs_from:
